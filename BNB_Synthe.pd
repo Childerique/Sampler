@@ -1,4 +1,4 @@
-#N canvas 269 104 1055 783 10;
+#N canvas 266 117 1055 783 10;
 #X obj 275 19 notein;
 #X floatatom 314 -9 5 0 0 0 - - -, f 5;
 #X floatatom 294 -29 5 0 0 0 - - -, f 5;
@@ -102,7 +102,7 @@
 -1;
 #X floatatom 101 165 5 0 255 2 Compteur - -, f 5;
 #X obj 101 135 nbx 5 14 1 24 0 0 empty empty Nombre_de_Samples 0 -8
-0 10 -262144 -1 -86277 16 256;
+0 10 -262144 -1 -86277 1 256;
 #X obj 40 102 sel 1;
 #X obj 121 -2 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
@@ -129,6 +129,7 @@
 #X coords 0 -1 1 1 85 80 1 100 100;
 #X restore 275 184 pd compteur;
 #X floatatom 275 343 5 0 0 0 - - -, f 5;
+#X obj 417 344 test;
 #X connect 0 0 3 0;
 #X connect 0 0 4 0;
 #X connect 0 1 2 0;
