@@ -66,9 +66,10 @@ class Server:
         liblo.send(self.puredata, msg)
         
         for i in range(0, len(self.data)):
-            print(self.data[i])
-            liblo.send(self.puredata, "/data/add", ('i', i), ('s', self.data[i]))
-            sleep(0.01)
+#            print(self.data[i])
+            if self.data[i] != 'null' :
+              liblo.send(self.puredata, "/data/add", ('i', i), ('s', self.data[i]))
+#            sleep(0.01)
             
         msg = liblo.Message("/data/update")
         liblo.send(self.puredata, msg)
